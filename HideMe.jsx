@@ -25,14 +25,15 @@ class HideMe extends Component {
 		// set new value
 		// pass in a JavaScript object with values we want to updated
 		this.setState({ hidden: true })
-}
+	}
 
 	render() {
 		let { hidden } = this.state;
 		let { children } = this.props; 
 		return ( 
+			// Use of null instead of "" (empty string) to display nothing
 			<header className="jumbotron" onClick= { this.handleClick }>
-				<p onClick={ this.handleClick }>{ hidden ? null : children }</p>;
+				<p onClick={ this.handleClick }>{ hidden ? null : children }</p>
 			</header>
 		);
 	}

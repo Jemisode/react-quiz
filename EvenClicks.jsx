@@ -13,6 +13,7 @@ class EvenClicks extends Component {
 		// set up our state
 		// just a plain old JavaScript object
 		this.state = {
+			// could do with boolean but as using number +1 of count then use number
 			clicked: false,
 		};
 
@@ -38,4 +39,3 @@ class EvenClicks extends Component {
 }
 
 export default EvenClicks;
-

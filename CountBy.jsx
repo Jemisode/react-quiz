@@ -30,9 +30,10 @@ class CountBy extends Component {
 
 	render() {
 		let { count } = this.state;
+		
 		return (	
 			<header className="jumbotron" onClick= { this.handleClick }>
-				<p onClick={ this.handleClick }> { count }				
+				<p onClick={ this.handleClick }> { count } 
 				</p>
 			</header>
 		);
